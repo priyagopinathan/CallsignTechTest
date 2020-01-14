@@ -1,0 +1,310 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "verify price-conversion call convert the currencies to BOB",
+        "description": "",
+        "id": "price-conversion---crypto-currencies;verify-price-conversion-call-convert-the-currencies-to-bob",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 135267040,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user constructs the url to bring the latest crypto currencies",
+            "match": {
+              "location": "StepDefs.userConstructsTheUrlToBringTheLatestCryptoCurrencies()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2151298117,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "get call is performed to bring the latest Ccys",
+            "match": {
+              "location": "StepDefs.getCallIsPerformedToBringCcys()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8019434,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the response code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefs.theResponseCodeIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 449932026,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user retrieves the ids for the currencies \"BTC\", \"USDT\", \"ETH\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BTC",
+                  "offset": 43
+                },
+                {
+                  "val": "USDT",
+                  "offset": 50
+                },
+                {
+                  "val": "ETH",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefs.userRetrieveTheIdsForTheCurrenciesbTCuSDeTH(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 990784733,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user converts the BTC,USDT,ETH to Bolivian Boliviano \"BOB\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BOB",
+                  "offset": 54
+                }
+              ],
+              "location": "StepDefs.userConvertsTheCurrencies(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114739,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the response code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefs.theResponseCodeIs(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "verify currency info call fetch all the relevant information",
+        "description": "",
+        "id": "price-conversion---crypto-currencies;verify-currency-info-call-fetch-all-the-relevant-information",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 47781,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user constructs the url to fetch the currency info",
+            "match": {
+              "location": "StepDefs.userConstructsTheUrlToFetchCurrencyInfo()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 330713138,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "get call is performed to fetch currency info",
+            "match": {
+              "location": "StepDefs.getCallIsPerformedToFetchCurrencyInfo()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 122399,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the response code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 21
+                }
+              ],
+              "location": "StepDefs.theResponseCodeIs(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38617016,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "\"data.1027.logo\" value is \"https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "data.1027.logo",
+                  "offset": 1
+                },
+                {
+                  "val": "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefs.valueIs(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18311645,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "\"data.1027.urls.technical_doc\" value contains \"https://github.com/ethereum/wiki/wiki/White-Paper\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "data.1027.urls.technical_doc",
+                  "offset": 1
+                },
+                {
+                  "val": "https://github.com/ethereum/wiki/wiki/White-Paper",
+                  "offset": 47
+                }
+              ],
+              "location": "StepDefs.valueContains(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15157986,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "\"data.1027.symbol\" value is \"ETH\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "data.1027.symbol",
+                  "offset": 1
+                },
+                {
+                  "val": "ETH",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefs.valueIs(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17401880,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "\"data.1027.date_added\" value is \"2015-08-07T00:00:00.000Z\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "data.1027.date_added",
+                  "offset": 1
+                },
+                {
+                  "val": "2015-08-07T00:00:00.000Z",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefs.valueIs(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18157570,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "\"data.1027.platform\" value is \"null\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "data.1027.platform",
+                  "offset": 1
+                },
+                {
+                  "val": "null",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefs.valueIs(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15354268,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "\"data.1027.tags\" value contains \"mineable\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "data.1027.tags",
+                  "offset": 1
+                },
+                {
+                  "val": "mineable",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefs.valueContains(String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Price conversion - Crypto currencies",
+    "description": "",
+    "id": "price-conversion---crypto-currencies",
+    "keyword": "Feature",
+    "uri": "draysonProduct.feature"
+  }
+]
